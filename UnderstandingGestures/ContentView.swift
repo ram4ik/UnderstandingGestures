@@ -17,9 +17,10 @@ struct ContentView: View {
             .scaleEffect(isPressed ? 0.5 : 1.0)
             .animation(.easeInOut)
             .foregroundColor(.green)
-            .gesture( TapGesture()
-            .onEnded({
-                self.isPressed.toggle()
+            .gesture(
+                LongPressGesture(minimumDuration: 1.0)
+                    .onEnded({ _ in
+                        self.isPressed.toggle()
             })
         )
     }
