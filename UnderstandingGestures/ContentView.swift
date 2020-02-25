@@ -19,8 +19,10 @@ struct ContentView: View {
     var body: some View {
         VStack(spacing: 30) {
             
+            Spacer()
+            
             Text("Long press gesture")
-            Image(systemName: "star.circle.fill")
+            Image(systemName: "timelapse")
                 .font(.system(size: 50))
                 .scaleEffect(isPressed ? 0.5 : 1.0)
                 .animation(.easeInOut)
@@ -32,7 +34,7 @@ struct ContentView: View {
                 })
             )
             
-            Image(systemName: "star.circle.fill")
+            Image(systemName: "rectangle.and.paperclip")
                 .font(.system(size: 50))
                 .opacity(longPressTap ? 0.4 : 1.0)
                 .scaleEffect(isPressed ? 0.5 : 1.0)
@@ -51,7 +53,7 @@ struct ContentView: View {
             
             // Using Drag Gesture
             Text("Using Drag Gesture")
-            Image(systemName: "star.circle.fill")
+            Image(systemName: "trash.circle")
                 .font(.system(size: 50))
                 .offset(x: position.width + dragOffset.width,
                         y: position.height + dragOffset.height)
@@ -67,7 +69,17 @@ struct ContentView: View {
                         self.position.width += value.translation.width
                     })
                 )
-    
+            Spacer()
+            
+            Text("Dragging only happens when a user presses and holds the image for at least one second")
+                .foregroundColor(.purple)
+            
+            // Combining Gestures
+            CombiningGestures()
+                .padding()
+            
+            Spacer()
+            
         }
     }
 }

@@ -13,6 +13,7 @@
 		1DFEEECA2405BFD6003EC04D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DFEEEC92405BFD6003EC04D /* Assets.xcassets */; };
 		1DFEEECD2405BFD6003EC04D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DFEEECC2405BFD6003EC04D /* Preview Assets.xcassets */; };
 		1DFEEED02405BFD6003EC04D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DFEEECE2405BFD6003EC04D /* LaunchScreen.storyboard */; };
+		1DFEEED82405C8D3003EC04D /* CombiningGestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFEEED72405C8D3003EC04D /* CombiningGestures.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1DFEEECC2405BFD6003EC04D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1DFEEECF2405BFD6003EC04D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1DFEEED12405BFD6003EC04D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DFEEED72405C8D3003EC04D /* CombiningGestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombiningGestures.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				1DFEEECE2405BFD6003EC04D /* LaunchScreen.storyboard */,
 				1DFEEED12405BFD6003EC04D /* Info.plist */,
 				1DFEEECB2405BFD6003EC04D /* Preview Content */,
+				1DFEEED72405C8D3003EC04D /* CombiningGestures.swift */,
 			);
 			path = UnderstandingGestures;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 			files = (
 				1DFEEEC42405BFD2003EC04D /* AppDelegate.swift in Sources */,
 				1DFEEEC62405BFD2003EC04D /* SceneDelegate.swift in Sources */,
+				1DFEEED82405C8D3003EC04D /* CombiningGestures.swift in Sources */,
 				1DFEEEC82405BFD2003EC04D /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
