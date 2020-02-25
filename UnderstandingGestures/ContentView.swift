@@ -10,7 +10,17 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        Image(systemName: "star.circle.fill")
+            .font(.system(size: 200))
+            .foregroundColor(.green)
+            .gesture(
+                TapGesture()
+                    .onEnded({
+                        print("Tapped!")
+                        
+                    }
+                )
+        )
     }
 }
 
